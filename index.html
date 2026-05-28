@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meteo Cóndor Patagonia</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(to bottom,#0b1d3a,#1d4e89);
+    color:white;
+    text-align:center;
+}
+
+header{
+    padding:30px;
+    background:rgba(0,0,0,0.3);
+}
+
+h1{
+    font-size:3em;
+    margin:0;
+}
+
+.sub{
+    font-size:1.2em;
+    color:#cfd8dc;
+}
+
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:30px;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    padding:20px;
+    margin:15px;
+    border-radius:15px;
+    width:250px;
+    backdrop-filter:blur(5px);
+}
+
+.temp{
+    font-size:3em;
+    font-weight:bold;
+}
+
+footer{
+    margin-top:40px;
+    padding:20px;
+    background:rgba(0,0,0,0.3);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Meteo Cóndor</h1>
+    <div class="sub">
+        Estación Meteorológica Patagonia Norte
+    </div>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Temperatura</h2>
+        <div class="temp">12°C</div>
+    </div>
+
+    <div class="card">
+        <h2>Viento</h2>
+        <div class="temp">35 km/h</div>
+    </div>
+
+    <div class="card">
+        <h2>Humedad</h2>
+        <div class="temp">72%</div>
+    </div>
+
+</div>
+
+<div style="margin-top:40px;">
+    <iframe width="90%" height="450"
+    src="https://embed.windy.com/embed2.html?lat=-40.81&lon=-63&detailLat=-40.81&detailLon=-63&width=650&height=450&zoom=7&level=surface&overlay=wind&product=ecmwf"
+    frameborder="0"></iframe>
+</div>
+
+<footer>
+    Meteo Cóndor Patagonia © 2026
+</footer>
+
+</body>
+</html>
